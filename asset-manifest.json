@@ -1,7 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.01fad786.css",
+<<<<<<< HEAD
     "main.js": "/static/js/main.c810484f.js",
+=======
+    "main.js": "/static/js/main.f23647d6.js",
+>>>>>>> 397e927cefdf01f59cf52ef7d2367e8b46894abf
     "static/js/787.924615c5.chunk.js": "/static/js/787.924615c5.chunk.js",
     "static/media/kyun.jpg": "/static/media/kyun.6c0f1cef8dd46d5bbea5.jpg",
     "static/media/kimyoungchul.jpg": "/static/media/kimyoungchul.6b01ae814315e39a4369.jpg",
@@ -11,11 +15,19 @@
     "static/media/parkso.jpg": "/static/media/parkso.895db1b3678a3813c8c1.jpg",
     "index.html": "/index.html",
     "main.01fad786.css.map": "/static/css/main.01fad786.css.map",
+<<<<<<< HEAD
     "main.c810484f.js.map": "/static/js/main.c810484f.js.map",
+=======
+    "main.f23647d6.js.map": "/static/js/main.f23647d6.js.map",
+>>>>>>> 397e927cefdf01f59cf52ef7d2367e8b46894abf
     "787.924615c5.chunk.js.map": "/static/js/787.924615c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01fad786.css",
+<<<<<<< HEAD
     "static/js/main.c810484f.js"
+=======
+    "static/js/main.f23647d6.js"
+>>>>>>> 397e927cefdf01f59cf52ef7d2367e8b46894abf
   ]
 }
