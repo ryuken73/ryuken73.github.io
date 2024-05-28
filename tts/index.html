@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTS 비교</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    audio {
+      margin: 5px;
+    }
+    .number {
+      font-size: 25px;
+      margin-left: 20px;
+    }
+    .hidden {
+      background: black;
+      color: black;
+      border: 1px solid black;
+      width: 300px;
+      height: 100%;
+      margin: 10px;
+      font-size: 25px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .show {
+      color: white;
+    }
+  </style>
+</head>
+<body id="body">
+  <div class="container">
+    <audio controls src="./audio/google_wavenet_A_speed0.95.wav"></audio>
+    <div class="number">1.</div>
+    <div class="hidden">구글 #1</div>
+  </div>
+  <div class="container">
+    <audio controls src="./audio/clova_1.mp3"></audio>
+    <div class="number">2.</div>
+    <div class="hidden">클로버 조수빈 아나운서</div>
+  </div>
+  <div class="container">
+    <audio controls src="./audio/amazon.mp3"></audio>
+    <div class="number">3.</div>
+    <span class="hidden">아마존 Poly</span>
+  </div>
+  <div class="container">
+    <audio controls src="./audio/clova_rike_speed1_tone2.mp3"></audio>
+    <div class="number">4.</div>
+    <span class="hidden">클로버 리케(custom)</span>
+  </div>
+  <div class="container">
+    <audio controls src="./audio/google2.wav"></audio>
+    <div class="number">5.</div>
+    <span class="hidden">구글 #2</span>
+  </div>
+
+</body>
+<script>
+  document.getElementById('body').addEventListener('click', (e) => {
+    e.target.classList.toggle('show');
+  })
+  const audioPlayers = document.getElementsByTagName('audio');
+  console.log(audioPlayers)
+  for(let audioPlayer of audioPlayers){
+    audioPlayer.addEventListener('play', e => {
+      for(let audioPlayer of audioPlayers){
+        if(e.target !== audioPlayer){
+          audioPlayer.pause();
+          audioPlayer.currentTime = 0;
+        }
+      }
+    })
+  }
+</script>
+</html>
